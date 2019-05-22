@@ -12,6 +12,8 @@ app.listen(port, function () {
 	console.log(`API listening on port: ${port}`);
 });
 
+require('../routes/todo.routes')(app);
+
 app.get('/', function (req, res) {
 	res.status(200).send({
 		message: 'Todo API'

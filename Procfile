@@ -1,1 +1,1 @@
-web: node ./app/config/server.js
+web: node app/loader.js
